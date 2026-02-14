@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAL GUARD - Early Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ORAL GUARD</div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="page active card">
+      <div class="icon-container">
+        <img src="tongue-removebg-preview.png" alt="" class="image-tongue">
+      </div>
+      <h1> Oral Cancer Screening</h1>
+      <p>Upload an image to detect early signs of oral abnormalities using advanced intelligent analysis. Our system helps in early detection for better outcomes.</p>
+      
+      <div class="features">
+        <div class="feature-item">
+          <div class="emoji">⚡</div>
+          <h3>Fast Analysis</h3>
+        </div>
+        <div class="feature-item">
+          <div class="emoji">🔒</div>
+          <h3>Secure & Private</h3>
+        </div>
+        <div class="feature-item">
+          <div class="emoji">✓</div>
+          <h3>Accurate Results</h3> 
+        </div>
+      </div>
+      
+     <button class="primary-btn" onclick="openModal()">
+  Start Screening →
+</button>
+
+    </section>
+
+
+
+<!-- Disclaimer Modal -->
+<div id="disclaimerModal" class="modal">
+  <div class="modal-content">
+    <h2>Disclaimer & Privacy Policy</h2>
+
+    <div class="modal-text">
+      <p><strong>Medical Disclaimer:</strong></p>
+      <p>
+        This screening tool is for informational purposes only.
+        It does not replace professional medical diagnosis.
+        Always consult a qualified healthcare provider.
+      </p>
+
+      <p><strong>Privacy Policy:</strong></p>
+      <p>
+        Uploaded images are processed securely and are not stored
+        without user consent. Your data remains confidential.
+      </p>
+    </div>
+
+    <div class="checkbox-area">
+      <input type="checkbox" id="agreeCheck">
+      <label for="agreeCheck">
+        I have read and agree to the terms and privacy policy.
+      </label>
+    </div>
+
+    <div class="modal-buttons">
+      <button class="secondary-btn" onclick="closeModal()">Cancel</button>
+      <button class="primary-btn" onclick="acceptAndProceed()">
+        Accept & Continue
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Upload Page -->
+    <section id="upload" class="page card">
+      <h2>Upload Your Image</h2>
+      <p>Please select a clear image of the affected area for analysis</p>
+      <input type="file" id="imageInput" accept="image/*" onchange="handleFileSelect()">
+      <button class="primary-btn" onclick="previewImage()">Preview & Continue →</button>
+    </section>
+
+    <!-- Preview Page -->
+    <section id="preview" class="page card">
+      <h2>Review Your Image</h2>
+      <p>Please confirm the image before analysis</p>
+      <img id="previewImg" class="preview-img" alt="Preview">
+      <div style="display: flex; gap: 15px; justify-content: center; margin-top: 25px;">
+        <button class="secondary-btn" onclick="goToPage('upload')">← Change Image</button>
+        <button class="primary-btn" onclick="showResult()">Analyze Image →</button>
+      </div>
+    </section>
+
+    <!-- Result Page -->
+<section id="result" class="page card">
+  <h2>Analysis Complete</h2>
+
+  <!-- Primary Result -->
+  <div class="result-box">
+  <div id="loadingState">
+    <div class="spinner"></div>
+    <p style="margin-top:15px;">Waiting for doctor's review...</p>
+  </div>
+
+  <p id="resultText" style="display:none;"></p>
+</div>
+
+  <!-- Health Questionnaire (Hidden Initially) -->
+  <div id="healthForm" class="health-form" style="display:none; margin-top:25px;">
+    <h2 style="margin-bottom:20px;">Additional Health Questions</h2><br>
+
+    <div class="question">
+      <label><input type="checkbox" value="tobacco"> Do you use tobacco products?</label><br>
+    </div>
+
+    <div class="question">
+      <label><input type="checkbox" value="alcohol"> Frequent alcohol consumption?</label><br>
+    </div>
+
+    <div class="question">
+      <label><input type="checkbox" value="ulcers"> Persistent mouth ulcers?</label><br>
+    </div>
+
+    <div class="question">
+      <label><input type="checkbox" value="whitepatch"> White or red patches in mouth?</label><br>
+    </div>
+
+    <div class="question">
+      <label><input type="checkbox" value="pain"> Tongue pain or difficulty swallowing?</label><br><br>
+    </div>
+
+    <button class="primary-btn" onclick="submitHealthForm()">
+      Submit Health Info
+    </button>
+  </div>
+
+  <!-- Final Recommendation -->
+  <div id="finalAdvice" style="display:none; margin-top:20px;">
+    <div class="result-box">
+      <p id="adviceText"></p>
+    </div>
+  </div>
+
+  <p style="margin-top: 20px; font-size: 14px; color: #64748b;">
+    <strong>Note:</strong><b> This is a screening tool. Please consult a healthcare professional.</b>
+  </p>
+
+  <button class="secondary-btn" onclick="goToPage('dashboard')">
+    ← Start New Screening
+  </button>
+</section>
+  </div>
+
+  <!-- Appointment Confirmation Page -->
+<!-- <section id="appointment" class="page card">
+  <h2>Need help? consult us</h2>
+
+  <div class="appointment-box">
+    <p><strong>Hospital:</strong>City Care Dental Hospital</p>
+    <p><strong>Doctor:</strong> Dr. Anjali Menon (Oral Specialist)</p>
+    <p><strong>Date:</strong> <span id="appointmentDate"></span></p>
+    <p><strong>Time:</strong> 10:30 AM</p>
+    <p><strong>Appointment ID:</strong> #OG2025-7842</p>
+
+    <div class="status-badge">Confirmed</div>
+  </div>
+
+  <p style="margin-top:20px; font-size:14px; color:#64748b;">
+    Please arrive 15 minutes early and bring any previous medical records.
+  </p> -->
+  <section id="appointment" class="page card">
+  <h2>Need help? consult us</h2>
+
+  <div class="appointment-box">
+    <p><strong>Hospital:</strong>City Care Dental Hospital</p>
+    <p><strong>Doctor:</strong> Dr. Anjali Menon (Oral Specialist)</p>
+    <p><strong>Date:</strong> <span id="appointmentDate"></span></p>
+    <p><strong>Time:</strong> 10:30 AM</p>
+    <p><strong>Appointment ID:</strong> #OG2025-7842</p>
+
+    <button id="confirmBtn" class="primary-btn" onclick="confirmAppointment()">
+      Confirm Appointment
+    </button>
+
+    <p id="successMessage" class="success-text"></p>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
