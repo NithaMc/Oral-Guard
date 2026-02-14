@@ -12,7 +12,7 @@ Note: Provides preliminary screening assistance, not medical diagnosis.
 - Member 2: Nitha MC - Sullamussalam Science College Areekode
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://nithamc.github.io/Oral-Guard/]
 
 ### Project Description
 A web-based early oral screening platform where users upload a tongue photo to receive an instant preliminary screening result. After answering a few health questions, the system provides guidance on whether medical consultation is recommended. The platform focuses on awareness and early risk indication, not medical diagnosis.
@@ -89,3 +89,4 @@ Team Contributions
 Nitha MC: Frontend design & UI development
 Jumna CK: Screening logic implementation & documentation
 Made with ❤️ at TinkerHub
+
