@@ -1,72 +1,90 @@
+
 # Oral Guard 🎯
 
-## Type: Web-based early oral screening platform
-Purpose: To promote early awareness and guide users toward timely medical consultation.
-Flow: Scan QR/Open website → Upload tongue photo → result → Questions → Guidance.
-Note: Provides preliminary screening assistance, not medical diagnosis.
+## Basic Details
 
-### Team Name: SheNova
+**Team Name:** SheNova  
 
-### Team Members
-- Member 1: Jumna CK - Sullamussalam Science College Areekode
-- Member 2: Nitha MC - Sullamussalam Science College Areekode
+**Team Members:**  
+- Jumna CK – Sullamussalam Science College, Areekode  
+- Nitha MC – Sullamussalam Science College, Areekode  
 
-### Hosted Project Link
-(Web)[https://nithamc.github.io/Oral-Guard/]
+**Hosted Project Link:**  
+🌐 https://nithamc.github.io/Oral-Guard/
 
-### Project Description
-A web-based early oral screening platform where users upload a tongue photo to receive an instant preliminary screening result. After answering a few health questions, the system provides guidance on whether medical consultation is recommended. The platform focuses on awareness and early risk indication, not medical diagnosis.
+## Project Description
 
-### The Problem statement
-Many cases of oral cancer are diagnosed late due to lack of awareness and delayed medical consultation. People need a quick and accessible way to check early signs and understand when to seek professional care.
+Oral Guard is a web-based early oral screening platform that allows users to upload a tongue photo and receive an instant preliminary screening result. After answering a few health-related questions, the system provides guidance on whether medical consultation is recommended. The platform focuses on awareness and early risk indication and does not replace professional medical diagnosis.
+
+### The Problem
+Many cases of oral cancer are diagnosed at a late stage due to lack of awareness and delayed medical consultation. People often ignore early symptoms or hesitate to visit healthcare professionals.
 
 ### The Solution
-A web-based platform where users upload tongue photo to receive an instant preliminary screening result. After answering a few health questions, the system provides guidance on whether medical consultation is needed.
+Oral Guard provides a simple, QR-based web platform where users can upload a tongue image, receive an instant screening indication, answer basic health questions, and get guidance on whether immediate medical consultation is recommended.
 
-##Technical Details
-Technologies/Components Used
-For Software:
-Languages Used:
-HTML
-CSS
-JavaScript
 
-##Tools Used:
-VS Code
-GitHub
-Browser Dev Tools
+# Technical Details
 
-##Features
-QR-based access to the platform
-Tongue photo upload
-Instant preliminary screening result
-Health questionnaire
-Risk-based guidance recommendation
-Consent & medical disclaimer integration
-Implementation
-Installation
-Copy code
-Bash
-git clone [https://github.com/NithaMc/Oral-Guard/]
-cd project-folder
+## Technologies Used
+
+**Languages:**
+- HTML  
+- CSS  
+- JavaScript  
+
+**Tools:**
+- VS Code  
+- GitHub  
+- Browser Developer Tools  
+
+**Project Type:**  
+Frontend Web Application (Static Website)
+
+
+# Features
+
+-  QR-based access to the screening platform  
+-  Tongue photo upload system  
+-  Instant preliminary screening result  
+-  Health questionnaire for better evaluation  
+-  Risk-based guidance recommendation  
+-  Consent & medical disclaimer integration  
+
+
+## Installation
+
+```bash
+git clone https://github.com/nithamc/Oral-Guard.git
+cd Oral-Guard
+
 Run
-If static website:
-Copy code
-Bash
-Open index.html in browser
-If using React:
-Copy code
-Bash
-npm install
-npm start
+
+Since this is a static web project:
+
+Open index.html in your browser
+
+OR use Live Server in VS Code for better development preview.
+
+
 Project Documentation
+
 Screenshots
-(Add at least 3 screenshots)
-Landing Page – QR entry & start button
-Photo Upload & Instant Result Screen
-Final Guidance Page
+
+
+
+Diagrams
+
+System Architecture
+
+
+Frontend-based static web application where user input is processed using JavaScript logic for screening simulation.
+
+
 Application Workflow
-Scan QR Code
+
+
+Flow:
+Scan QR Code/visit website
 → Accept Consent & Disclaimer
 → Upload Tongue Photo
 → Instant Screening Result
@@ -74,18 +92,69 @@ Scan QR Code
 → Case Submitted
 → Receive Guidance
 
-##AI Tools Used (For Transparency)
+
+Project Demo
+
+ Video Demo
+
+[Add your demo video link here – YouTube / Drive]
+
+
+AI Tools Used (Transparency)
+
 Tool Used: ChatGPT
+
 Purpose:
+
 Structuring project documentation
+
 Drafting consent & disclaimer content
+
 Improving pitch clarity
+
+Refining feature descriptions
+
+
+Example Prompts Used:
+
+“Create a professional README for a web-based oral screening project.”
+
+“Write a legal-style medical disclaimer for a health screening website.”
+
+“Generate a structured project documentation template.”
+
+
 Human Contributions:
+
 Project ideation
-Website design & implementation
-Logic development
-Testing & presentation preparation
+
+UI/UX design
+
+Frontend development
+
+Screening logic implementation
+
+Testing and refinement
+
+
+
+---
+
 Team Contributions
+
 Nitha MC: Frontend design & UI development
+
 Jumna CK: Screening logic implementation & documentation
+
+
+
+---
+
+License
+
+This project is licensed under the MIT License.
+
+
+---
+
 Made with ❤️ at TinkerHub
