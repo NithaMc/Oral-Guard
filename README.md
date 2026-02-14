@@ -65,23 +65,35 @@ Open index.html in your browser
 
 OR use Live Server in VS Code for better development preview.
 
-
+```
 Project Documentation
 
 Screenshots
 
+<p align="center">
+  <img src="screenshots/Screenshot 2026-02-14 080542 - Copy (2).png" alt="Project Banner" width="100%">
+</p>
 
+<p align="center">
+  <img src="screenshots/Screenshot 2026-02-14 080613.png" alt="Project Banner" width="100%">
+</p>
 
+<p align="center">
+  <img src="screenshots/Screenshot 2026-02-14 080656.png" alt="Project Banner" width="100%">
+</p>
+
+<p align="center">
+  <img src="screenshots/Screenshot 2026-02-14 080753.png" alt="Project Banner" width="100%">
+</p>
+
+```
 Diagrams
 
 System Architecture
 
-
 Frontend-based static web application where user input is processed using JavaScript logic for screening simulation.
 
-
 Application Workflow
-
 
 Flow:
 Scan QR Code/visit website
@@ -92,12 +104,11 @@ Scan QR Code/visit website
 → Case Submitted
 → Receive Guidance
 
-
 Project Demo
 
  Video Demo
 
-[Add your demo video link here – YouTube / Drive]
+https://drive.google.com/file/d/1dUmgW2Qv2yhzGHPV18Iq51f8TCx5JXJD/view?usp=drive_link
 
 
 AI Tools Used (Transparency)
@@ -158,3 +169,4 @@ This project is licensed under the MIT License.
 ---
 
 Made with ❤️ at TinkerHub
+
