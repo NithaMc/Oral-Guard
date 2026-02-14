@@ -82,11 +82,26 @@
 
 
     <section id="upload" class="page card">
-      <h2>Upload Your Image</h2>
-      <p>Please select a clear image of the affected area for analysis</p>
-      <input type="file" id="imageInput" accept="image/*" onchange="handleFileSelect()">
-      <button class="primary-btn" onclick="previewImage()">Preview & Continue →</button>
-    </section>
+  <h2>Upload Your Image</h2>
+  <p>Please select a clear image of the affected area for analysis</p>
+
+  <!-- Friendly Instructions -->
+  <div class="upload-instructions">
+    <h4>😊 Let’s Take a Clear Tongue Photo!</h4>
+    <ul>
+      <li>Find a bright place (natural light is best).</li>
+      <li>Open your mouth wide and stick your tongue out fully.</li>
+      <li>Keep your tongue relaxed and flat (don’t curl it).</li>
+      <li>Make sure the entire tongue is clearly visible.</li>
+      <li>Hold your phone steady to avoid blurry photos.</li>
+      <li>Don’t use filters or edit the image.</li>
+      <li>Take 2–3 photos and upload the clearest one.</li>
+    </ul>
+  </div>
+
+  <input type="file" id="imageInput" accept="image/*" onchange="handleFileSelect()">
+  <button class="primary-btn" onclick="previewImage()">Preview & Continue →</button>
+</section>
 
     <section id="preview" class="page card">
       <h2>Review Your Image</h2>
