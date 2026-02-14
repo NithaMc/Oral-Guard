@@ -8,14 +8,12 @@
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">ORAL GUARD</div>
   </nav>
 
   <div class="container">
 
-    <!-- Dashboard -->
     <section id="dashboard" class="page active card">
       <div class="icon-container">
         <img src="tongue-removebg-preview.png" alt="" class="image-tongue">
@@ -46,7 +44,6 @@
 
 
 
-<!-- Disclaimer Modal -->
 <div id="disclaimerModal" class="modal">
   <div class="modal-content">
     <h2>Disclaimer & Privacy Policy</h2>
@@ -84,7 +81,6 @@
 
 
 
-    <!-- Upload Page -->
     <section id="upload" class="page card">
       <h2>Upload Your Image</h2>
       <p>Please select a clear image of the affected area for analysis</p>
@@ -92,7 +88,6 @@
       <button class="primary-btn" onclick="previewImage()">Preview & Continue →</button>
     </section>
 
-    <!-- Preview Page -->
     <section id="preview" class="page card">
       <h2>Review Your Image</h2>
       <p>Please confirm the image before analysis</p>
@@ -103,11 +98,9 @@
       </div>
     </section>
 
-    <!-- Result Page -->
 <section id="result" class="page card">
   <h2>Analysis Complete</h2>
 
-  <!-- Primary Result -->
   <div class="result-box">
   <div id="loadingState">
     <div class="spinner"></div>
@@ -117,7 +110,6 @@
   <p id="resultText" style="display:none;"></p>
 </div>
 
-  <!-- Health Questionnaire (Hidden Initially) -->
   <div id="healthForm" class="health-form" style="display:none; margin-top:25px;">
     <h2 style="margin-bottom:20px;">Additional Health Questions</h2><br>
 
@@ -146,7 +138,6 @@
     </button>
   </div>
 
-  <!-- Final Recommendation -->
   <div id="finalAdvice" style="display:none; margin-top:20px;">
     <div class="result-box">
       <p id="adviceText"></p>
@@ -163,23 +154,7 @@
 </section>
   </div>
 
-  <!-- Appointment Confirmation Page -->
-<!-- <section id="appointment" class="page card">
-  <h2>Need help? consult us</h2>
 
-  <div class="appointment-box">
-    <p><strong>Hospital:</strong>City Care Dental Hospital</p>
-    <p><strong>Doctor:</strong> Dr. Anjali Menon (Oral Specialist)</p>
-    <p><strong>Date:</strong> <span id="appointmentDate"></span></p>
-    <p><strong>Time:</strong> 10:30 AM</p>
-    <p><strong>Appointment ID:</strong> #OG2025-7842</p>
-
-    <div class="status-badge">Confirmed</div>
-  </div>
-
-  <p style="margin-top:20px; font-size:14px; color:#64748b;">
-    Please arrive 15 minutes early and bring any previous medical records.
-  </p> -->
   <section id="appointment" class="page card">
   <h2>Need help? consult us</h2>
 

@@ -25,13 +25,12 @@ function previewImage() {
 function showResult() {
   goToPage('result');
 
-  // Reset states
   document.getElementById("healthForm").style.display = "none";
   document.getElementById("finalAdvice").style.display = "none";
   document.getElementById("resultText").style.display = "none";
   document.getElementById("loadingState").style.display = "block";
 
-  // Simulate processing delay (3 seconds)
+
   setTimeout(() => {
 
     document.getElementById("loadingState").style.display = "none";
@@ -59,7 +58,7 @@ function showResult() {
       document.getElementById("healthForm").style.display = "block";
     }
 
-  }, 3000); // 3 seconds loading
+  }, 3000);
 }
 
 
@@ -142,12 +141,8 @@ function confirmAppointment() {
   message.innerText = "✅ Your appointment has been scheduled successfully!";
   message.style.display = "block";
 
-  // Optional: disable button after confirmation
   document.getElementById("confirmBtn").disabled = true;
 
-  // Optional auto redirect after 3 seconds
-  // setTimeout(() => {
-  //   goToPage('dashboard');
-  // }, 3000);
+  
 }
 
